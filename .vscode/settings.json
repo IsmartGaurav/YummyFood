@@ -1,0 +1,10 @@
+{
+    "editor.defaultFormatter": "exceptionptr.vscode-prettier-eslint",
+    "editor.formatOnType": false, // required
+    "editor.formatOnPaste": true, // optional
+    "editor.formatOnSave": true, // optional
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "files.autoSave": "off",
+    "terminal.integrated.scrollback": 1000000, // optional but recommended
+  }
+  
