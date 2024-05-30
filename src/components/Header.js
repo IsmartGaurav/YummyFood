@@ -62,7 +62,6 @@ const Header = () => {
             >
               {login}
             </button>
-            <li>Hi👋,{loggedInUser}</li>
           </ul>
         </nav>
       </div>

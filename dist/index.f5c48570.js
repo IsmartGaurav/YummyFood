@@ -27500,16 +27500,6 @@ const Header = ()=>{
                                 fileName: "src/components/Header.js",
                                 lineNumber: 55,
                                 columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: [
-                                    "Hi\uD83D\uDC4B,",
-                                    loggedInUser
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 65,
-                                columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -35653,31 +35643,6 @@ const Body = ()=>{
                         fileName: "src/components/Body.js",
                         lineNumber: 63,
                         columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "m-4",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                children: "Change Username :"
-                            }, void 0, false, {
-                                fileName: "src/components/Body.js",
-                                lineNumber: 75,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                className: "border border-black m-2",
-                                value: loggedInUser,
-                                onChange: (e)=>setUserName(e.target.value)
-                            }, void 0, false, {
-                                fileName: "src/components/Body.js",
-                                lineNumber: 76,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 74,
-                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
@@ -35695,23 +35660,23 @@ const Body = ()=>{
                             resData: Restuarant
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 93,
+                            lineNumber: 85,
                             columnNumber: 15
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantsDefault.default), {
                             resData: Restuarant
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 95,
+                            lineNumber: 87,
                             columnNumber: 15
                         }, undefined)
                     }, Restuarant.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 86,
+                        lineNumber: 78,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 84,
+                lineNumber: 76,
                 columnNumber: 7
             }, undefined)
         ]
