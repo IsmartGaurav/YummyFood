@@ -25,7 +25,6 @@ const Restaurants = (props) => {
       <p className="ml-2 text-base font-medium">
         Distance {sla.lastMileTravelString}
       </p>
-      <h3> User : {loggedInUser}</h3>
       <p className="ml-2 text-base font-medium">{areaName}</p>
     </div>
   );

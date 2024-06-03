@@ -29,7 +29,6 @@ const ResMenu = () => {
     index === showIndex ? setShowIndex(null) : setShowIndex(index);
   };
 
-  console.log(resInfo);
   // || resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.categories[0]?.itemCards[0].card.info;
   // 853378 in This ResID Data Comes In Different Way
 
