@@ -2,5 +2,4 @@ node_modules
 .postcssrc
 .parcelrc
 babel.config.js
-__tests__
-mocks
+jest.config.js
