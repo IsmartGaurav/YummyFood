@@ -42,11 +42,6 @@ const Header = () => {
                 Contact
               </Link>
             </li>
-            <li className="mx-3 hover:text-cyan-500">
-              <Link to="/grocery" className="noUnderline">
-                Grocery
-              </Link>
-            </li>
             <li>
               <Link to="/cart" className="noUnderline">
                 Cart - ({cartItems.length})
