@@ -17,30 +17,32 @@ const Restaurants = (props) => {
         className="object-cover h-[150px] w-full rounded-lg"
         src={CDN_URL + cloudinaryImageId}
       />
-      <h3 className="ml-2 font-bold my-2 text-xl">{name}</h3>
-      <h4 className="ml-2 text-base font-medium">
-        {avgRating} • {sla.slaString}
-      </h4>
-      <p className="ml-2 text-base">{cuisines.join(", ")}</p>
-      <p className="ml-2 text-base font-medium">
-        Distance {sla.lastMileTravelString}
+      <h3 className="ml-2 font-bold my-2 text-lg">{name}</h3>
+
+      <p className="ml-2 text-base">
+        {cuisines.slice(0, 3).join(", ")}
+        {cuisines.length > 3 ? "..." : ""}
       </p>
-      <p className="ml-2 text-base font-medium">{areaName}</p>
+      <h4 className="ml-2 text-base font-medium">
+        <div className="flex items-center">
+          <span className="mr-1">{avgRating}</span>
+          <img
+            className="inline-block w-4 h-4 mr-1"
+            src="https://res.cloudinary.com/dvovtfe0s/image/upload/v1717529992/star-7207_mvk2fo.svg"
+          />
+          • {sla.slaString}
+        </div>
+      </h4>
+      <div className="ml-2 text-base font-medium flex items-center">
+        <img
+          className="w-4 h-4"
+          src="https://res.cloudinary.com/dvovtfe0s/image/upload/v1717530548/fast-food-delivery-12982_jthlwk.svg"
+        />
+        <p className="mx-1">Distance {sla.lastMileTravelString} </p>
+      </div>
+      <p className="ml-2 text-base font-medium">Area : {areaName}</p>
     </div>
   );
 };
 
 export default Restaurants;
-
-export const withOpenLabel = (Restaurants) => {
-  return (props) => {
-    return (
-      <div>
-        <label className="absolute bg-black text-white m-2 p-2 rounded ">
-          Open Now{" "}
-        </label>
-        <Restaurants {...props} />
-      </div>
-    );
-  };
-};
