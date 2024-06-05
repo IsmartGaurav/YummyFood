@@ -1,5 +1,4 @@
 import ItemList from "./ItemList";
-import { useState } from "react";
 import React from "react";
 
 const RestuarantCategory = ({ data, showItems, showIndex }) => {
@@ -13,7 +12,14 @@ const RestuarantCategory = ({ data, showItems, showIndex }) => {
         <span className="font-bold text-2xl" onClick={handleItem}>
           {data.title} ({data?.itemCards.length})
         </span>
-        <span onClick={handleItem}>🔽</span>
+        <span onClick={handleItem}>
+          {
+            <img
+              className="w-5 h-5"
+              src="https://res.cloudinary.com/dvovtfe0s/image/upload/v1717528206/chevron-down-solid_h2yqr2.svg"
+            />
+          }
+        </span>
       </div>
       {showItems && <ItemList itemsData={data?.itemCards} />}
     </div>
