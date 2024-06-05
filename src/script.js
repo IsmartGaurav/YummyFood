@@ -11,18 +11,10 @@ import appStore from "./utils/appStore.js";
 import { Provider } from "react-redux";
 import CartItem from "./components/Cart.js";
 
-const Grocery = lazy(() => import("./components/Grocery.js"));
 const Contact = lazy(() => import("./components/Contact.js"));
 
 const Applayout = () => {
   const [userName, setUserName] = useState();
-
-  useEffect(() => {
-    const data = {
-      name: "Raj",
-    };
-    setUserName(data.name);
-  }, []);
 
   return (
     <Provider store={appStore}>
@@ -54,14 +46,6 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<h1>Loading....</h1>}>
             <Contact />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/Grocery",
-        element: (
-          <Suspense fallback={<h1>Loading....</h1>}>
-            <Grocery />
           </Suspense>
         ),
       },
