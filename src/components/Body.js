@@ -1,4 +1,3 @@
-import Restaurants, { withOpenLabel } from "./Restaurants";
 import Shimmer from "./Shimmer";
 import { useState, useEffect, useContext } from "react";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -6,12 +5,13 @@ import { Link } from "react-router-dom";
 import { REST_URL } from "../utils/constants";
 import UserContext from "../utils/UseContext";
 import React from "react";
+import Restaurants from "./Restaurants";
 
 const Body = () => {
   const [restroList, setRestroList] = useState([]);
   const [filterList, setFilterlist] = useState([]);
   const [searchText, setSearchText] = useState("");
-  const RestuarantOpen = withOpenLabel(Restaurants);
+
   const { loggedInUser, setUserName } = useContext(UserContext);
 
   useEffect(() => {
@@ -81,11 +81,7 @@ const Body = () => {
             to={"/restaurant/" + Restuarant.info.id}
             className="noUnderline"
           >
-            {Restuarant.info.isOpen ? (
-              <RestuarantOpen resData={Restuarant} />
-            ) : (
-              <Restaurants resData={Restuarant} />
-            )}
+            <Restaurants resData={Restuarant} />
           </Link>
         ))}
       </div>
