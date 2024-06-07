@@ -25,11 +25,11 @@ const Restaurants = (props) => {
       </p>
       <h4 className="ml-2 text-base font-medium">
         <div className="flex items-center">
-          <span className="mr-1">{avgRating}</span>
           <img
             className="inline-block w-4 h-4 mr-1"
             src="https://res.cloudinary.com/dvovtfe0s/image/upload/v1717529992/star-7207_mvk2fo.svg"
           />
+          <span className="mr-1">{avgRating}</span>
           • {sla.slaString}
         </div>
       </h4>
